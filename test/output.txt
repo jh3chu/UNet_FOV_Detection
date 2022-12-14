@@ -1,0 +1,79 @@
+==============================
+Epoch 1/10
+C:\ProgramData\Miniconda3\lib\site-packages\monai\metrics\utils.py:219: UserWarning: y_pred should be a binarized tensor.
+  warnings.warn(f"{name} should be a binarized tensor.")
+10/258, Train loss: 0.0462
+20/258, Train loss: 0.0462
+30/258, Train loss: 0.0581
+40/258, Train loss: 0.0750
+50/258, Train loss: 0.0654
+60/258, Train loss: 0.0809
+70/258, Train loss: 0.0393
+80/258, Train loss: 0.0328
+90/258, Train loss: 0.0438
+100/258, Train loss: 0.1240
+110/258, Train loss: 0.0301
+120/258, Train loss: 0.0346
+130/258, Train loss: 0.0365
+140/258, Train loss: 0.0277
+150/258, Train loss: 0.0419
+160/258, Train loss: 0.0574
+170/258, Train loss: 0.0225
+180/258, Train loss: 0.0303
+190/258, Train loss: 0.0242
+200/258, Train loss: 0.0322
+210/258, Train loss: 0.0306
+220/258, Train loss: 0.0263
+230/258, Train loss: 0.0279
+240/258, Train loss: 0.0356
+250/258, Train loss: 0.0248
+------------------------------
+Epoch loss: 0.0455
+Epoch metric: -0.0005
+******************************
+Validation Loss: 0.0314
+Validation Mean Dice Loss: -0.0006
+Current epoch: 1         Current mean dice: 0.0000 
+Best mean dice: -0.0006 at epoch 1
+==============================
+Epoch 2/10
+10/258, Train loss: 0.1993
+20/258, Train loss: 0.1640
+30/258, Train loss: 0.1177
+40/258, Train loss: 0.2655
+50/258, Train loss: 0.1720
+60/258, Train loss: 0.1131
+70/258, Train loss: 0.0373
+80/258, Train loss: 0.0364
+90/258, Train loss: 0.0603
+100/258, Train loss: 0.1230
+110/258, Train loss: 0.0428
+120/258, Train loss: 0.0768
+130/258, Train loss: 0.0576
+140/258, Train loss: 0.0367
+150/258, Train loss: 0.0415
+160/258, Train loss: 0.0669
+170/258, Train loss: 0.0307
+180/258, Train loss: 0.0208
+Traceback (most recent call last):
+  File "c:/Users/jh3chu/OneDrive - University of Waterloo/OrthoTron/4. Projects/Spine DTI/FOV Detection/run.py", line 118, in <module>
+    main()
+  File "c:/Users/jh3chu/OneDrive - University of Waterloo/OrthoTron/4. Projects/Spine DTI/FOV Detection/run.py", line 100, in main
+    train_fn(
+  File "c:\Users\jh3chu\OneDrive - University of Waterloo\OrthoTron\4. Projects\Spine DTI\FOV Detection\utils\train.py", line 86, in train_fn
+    loss.backward()
+  File "C:\ProgramData\Miniconda3\lib\site-packages\torch\tensor.py", line 214, in backward
+    return handle_torch_function(
+  File "C:\ProgramData\Miniconda3\lib\site-packages\torch\overrides.py", line 1063, in handle_torch_function
+    result = overloaded_arg.__torch_function__(public_api, types, args, kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\monai\data\meta_tensor.py", line 249, in __torch_function__
+    ret = super().__torch_function__(func, types, args, kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\torch\tensor.py", line 995, in __torch_function__
+    ret = func(*args, **kwargs)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\torch\tensor.py", line 221, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph)
+  File "C:\ProgramData\Miniconda3\lib\site-packages\torch\autograd\__init__.py", line 130, in backward
+    Variable._execution_engine.run_backward(
+KeyboardInterrupt
+^C
+(base) C:\Users\jh3chu\OneDrive - University of Waterloo\OrthoTron\4. Projects\Spine DTI\FOV Detection>

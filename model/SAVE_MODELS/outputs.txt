@@ -1,0 +1,963 @@
+Epoch 2/51
+C:\ProgramData\Miniconda3\lib\site-packages\torch\tensor.py:995: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  ret = func(*args, **kwargs)
+10/258, Train Loss: 0.9952
+Train Dice Coefficient: 0.4304
+Epoch train time: 21.2 min remaining
+20/258, Train Loss: 0.9960
+Train Dice Coefficient: 0.4201
+Epoch train time: 20.9 min remaining
+30/258, Train Loss: 0.9956
+Train Dice Coefficient: 0.4325
+Epoch train time: 21.0 min remaining
+40/258, Train Loss: 0.9953
+Train Dice Coefficient: 0.4367
+Epoch train time: 21.1 min remaining
+50/258, Train Loss: 0.9944
+Train Dice Coefficient: 0.4396
+Epoch train time: 21.0 min remaining
+60/258, Train Loss: 0.9944
+Train Dice Coefficient: 0.4397
+Epoch train time: 20.7 min remaining
+70/258, Train Loss: 0.9950
+Train Dice Coefficient: 0.4411
+Epoch train time: 20.7 min remaining
+80/258, Train Loss: 0.9961
+Train Dice Coefficient: 0.4250
+Epoch train time: 20.7 min remaining
+90/258, Train Loss: 0.9953
+Train Dice Coefficient: 0.4457
+Epoch train time: 20.8 min remaining
+100/258, Train Loss: 0.9948
+Train Dice Coefficient: 0.4436
+Epoch train time: 20.8 min remaining
+110/258, Train Loss: 0.9939
+Train Dice Coefficient: 0.4476
+Epoch train time: 20.8 min remaining
+120/258, Train Loss: 0.9942
+Train Dice Coefficient: 0.4478
+Epoch train time: 20.8 min remaining
+130/258, Train Loss: 0.9932
+Train Dice Coefficient: 0.4512
+Epoch train time: 20.8 min remaining
+140/258, Train Loss: 0.9939
+Train Dice Coefficient: 0.4464
+Epoch train time: 20.9 min remaining
+150/258, Train Loss: 0.9935
+Train Dice Coefficient: 0.4571
+Epoch train time: 20.9 min remaining
+160/258, Train Loss: 0.9938
+Train Dice Coefficient: 0.4556
+Epoch train time: 20.9 min remaining
+170/258, Train Loss: 0.9918
+Train Dice Coefficient: 0.4586
+Epoch train time: 20.9 min remaining
+180/258, Train Loss: 0.9936
+Train Dice Coefficient: 0.4525
+Epoch train time: 20.9 min remaining
+190/258, Train Loss: 0.9928
+Train Dice Coefficient: 0.4608
+Epoch train time: 20.9 min remaining
+200/258, Train Loss: 0.9929
+Train Dice Coefficient: 0.4594
+Epoch train time: 21.0 min remaining
+210/258, Train Loss: 0.9918
+Train Dice Coefficient: 0.4614
+Epoch train time: 21.0 min remaining
+220/258, Train Loss: 0.9913
+Train Dice Coefficient: 0.4654
+Epoch train time: 21.0 min remaining
+230/258, Train Loss: 0.9905
+Train Dice Coefficient: 0.4636
+Epoch train time: 21.0 min remaining
+240/258, Train Loss: 0.9922
+Train Dice Coefficient: 0.4636
+Epoch train time: 20.9 min remaining
+250/258, Train Loss: 0.9957
+Train Dice Coefficient: 0.4471
+Epoch train time: 21.0 min remaining
+------------------------------
+Epoch loss: 0.9938
+Epoch metric: 0.4466
+******************************
+Validation Loss: 0.9786
+Validation Metric: 0.4952
+Current epoch: 3 
+Current metric: 0.4927
+Best Metric: 0.4952 at epoch 2
+==============================
+Epoch 3/51
+forrtl: error (200): program aborting due to control-C event
+Image              PC                Routine            Line        Source
+libifcoremd.dll    00007FFEAE8BDF54  Unknown               Unknown  Unknown
+KERNELBASE.dll     00007FFEF7F9AB73  Unknown               Unknown  Unknown
+KERNEL32.DLL       00007FFEF97174B4  Unknown               Unknown  Unknown
+ntdll.dll          00007FFEFA4C26A1  Unknown               Unknown  Unknown
+
+(base) C:\Users\jh3chu\OneDrive - University of Waterloo\OrthoTron\4. Projects\Spine DTI\UNet_FOV_Detection>C:/ProgramData/Miniconda3/python.exe "c:/Users/jh3chu/OneDrive - University of Waterloo/OrthoTron/4. Projects/Spine DTI/UNet_FOV_Detection/run.py"
+<frozen importlib._bootstrap>:219: RuntimeWarning: scipy._lib.messagestream.MessageStream size changed, may indicate binary incompatibility. Expected 56 from C header, got 64 from PyObject
+C:\ProgramData\Miniconda3\lib\site-packages\torchaudio\extension\extension.py:14: UserWarning: torchaudio C++ extension is not available.
+  warnings.warn('torchaudio C++ extension is not available.')
+C:\ProgramData\Miniconda3\lib\site-packages\torchaudio\backend\utils.py:88: UserWarning: No audio backend is available.
+  warnings.warn('No audio backend is available.')
+C:\ProgramData\Miniconda3\lib\site-packages\monai\utils\deprecate_utils.py:219: FutureWarning: monai.networks.nets.unet UNet.__init__:dimensions: Argument `dimensions` has been deprecated since version 0.6. Please use `spatial_dims` instead.
+  warn_deprecated(argname, msg, warning_category)
+Loading checkpoint...
+h...
+Complete
+==============================
+Epoch 3/52
+C:\ProgramData\Miniconda3\lib\site-packages\torch\tensor.py:995: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  ret = func(*args, **kwargs)
+10/258, Train Loss: 0.9914
+Train Dice Coefficient: 0.4670
+Epoch train time: 22.0 min remaining
+20/258, Train Loss: 0.9916
+Train Dice Coefficient: 0.4689
+Epoch train time: 21.6 min remaining
+30/258, Train Loss: 0.9945
+Train Dice Coefficient: 0.4588
+Epoch train time: 21.3 min remaining
+40/258, Train Loss: 0.9906
+Train Dice Coefficient: 0.4696
+Epoch train time: 21.2 min remaining
+50/258, Train Loss: 0.9901
+Train Dice Coefficient: 0.4677
+Epoch train time: 21.1 min remaining
+60/258, Train Loss: 0.9891
+Train Dice Coefficient: 0.4719
+Epoch train time: 21.2 min remaining
+70/258, Train Loss: 0.9905
+Train Dice Coefficient: 0.4684
+Epoch train time: 21.2 min remaining
+80/258, Train Loss: 0.9955
+Train Dice Coefficient: 0.4401
+Epoch train time: 21.2 min remaining
+90/258, Train Loss: 0.9907
+Train Dice Coefficient: 0.4718
+Epoch train time: 21.2 min remaining
+100/258, Train Loss: 0.9901
+Train Dice Coefficient: 0.4702
+Epoch train time: 21.1 min remaining
+110/258, Train Loss: 0.9895
+Train Dice Coefficient: 0.4681
+Epoch train time: 21.1 min remaining
+120/258, Train Loss: 0.9906
+Train Dice Coefficient: 0.4725
+Epoch train time: 21.1 min remaining
+130/258, Train Loss: 0.9898
+Train Dice Coefficient: 0.4742
+Epoch train time: 21.1 min remaining
+140/258, Train Loss: 0.9930
+Train Dice Coefficient: 0.4751
+Epoch train time: 21.1 min remaining
+150/258, Train Loss: 0.9910
+Train Dice Coefficient: 0.4710
+Epoch train time: 21.1 min remaining
+160/258, Train Loss: 0.9892
+Train Dice Coefficient: 0.4777
+Epoch train time: 21.1 min remaining
+170/258, Train Loss: 0.9884
+Train Dice Coefficient: 0.4754
+Epoch train time: 21.0 min remaining
+180/258, Train Loss: 0.9913
+Train Dice Coefficient: 0.4684
+Epoch train time: 21.0 min remaining
+190/258, Train Loss: 0.9933
+Train Dice Coefficient: 0.4560
+Epoch train time: 21.0 min remaining
+200/258, Train Loss: 0.9911
+Train Dice Coefficient: 0.4713
+Epoch train time: 21.0 min remaining
+210/258, Train Loss: 0.9901
+Train Dice Coefficient: 0.4750
+Epoch train time: 21.0 min remaining
+220/258, Train Loss: 0.9897
+Train Dice Coefficient: 0.4784
+Epoch train time: 21.0 min remaining
+230/258, Train Loss: 0.9871
+Train Dice Coefficient: 0.4773
+Epoch train time: 21.1 min remaining
+240/258, Train Loss: 0.9882
+Train Dice Coefficient: 0.4808
+Epoch train time: 21.1 min remaining
+250/258, Train Loss: 0.9921
+Train Dice Coefficient: 0.4729
+Epoch train time: 21.1 min remaining
+------------------------------
+Epoch loss: 0.9902
+Epoch metric: 0.4714
+******************************
+Validation Loss: 0.9725
+Validation Metric: 0.5017
+Current epoch: 4 
+Current metric: 0.4998
+Best Metric: 0.5017 at epoch 3
+==============================
+Epoch 4/52
+forrtl: error (200): program aborting due to control-C event
+Image              PC                Routine            Line        Source
+libifcoremd.dll    00007FFEAE8BDF54  Unknown               Unknown  Unknown
+KERNELBASE.dll     00007FFEF7F9AB73  Unknown               Unknown  Unknown
+KERNEL32.DLL       00007FFEF97174B4  Unknown               Unknown  Unknown
+ntdll.dll          00007FFEFA4C26A1  Unknown               Unknown  Unknown
+
+(base) C:\Users\jh3chu\OneDrive - University of Waterloo\OrthoTron\4. Projects\Spine DTI\UNet_FOV_Detection>C:/ProgramData/Miniconda3/python.exe "c:/Users/jh3chu/OneDrive - University of Waterloo/OrthoTron/4. Projects/Spine DTI/UNet_FOV_Detection/run.py"
+<frozen importlib._bootstrap>:219: RuntimeWarning: scipy._lib.messagestream.MessageStream size changed, may indicate binary incompatibility. Expected 56 from C header, got 64 from PyObject
+C:\ProgramData\Miniconda3\lib\site-packages\torchaudio\extension\extension.py:14: UserWarning: torchaudio C++ extension is not available.
+  warnings.warn('torchaudio C++ extension is not available.')
+C:\ProgramData\Miniconda3\lib\site-packages\torchaudio\backend\utils.py:88: UserWarning: No audio backend is available.
+  warnings.warn('No audio backend is available.')
+C:\ProgramData\Miniconda3\lib\site-packages\monai\utils\deprecate_utils.py:219: FutureWarning: monai.networks.nets.unet UNet.__init__:dimensions: Argument `dimensions` has been deprecated since version 0.6. Please use `spatial_dims` instead.
+  warn_deprecated(argname, msg, warning_category)
+Loading checkpoint...
+checkpoint_3.pth...
+Complete
+==============================
+Epoch 4/53
+C:\ProgramData\Miniconda3\lib\site-packages\torch\tensor.py:995: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  ret = func(*args, **kwargs)
+10/258, Train Loss: 0.9879
+Train Dice Coefficient: 0.4765
+Epoch train time: 20.2 min remaining
+20/258, Train Loss: 0.9888
+Train Dice Coefficient: 0.4754
+Epoch train time: 20.5 min remaining
+30/258, Train Loss: 0.9894
+Train Dice Coefficient: 0.4768
+Epoch train time: 20.9 min remaining
+40/258, Train Loss: 0.9849
+Train Dice Coefficient: 0.4792
+Epoch train time: 20.7 min remaining
+50/258, Train Loss: 0.9879
+Train Dice Coefficient: 0.4781
+Epoch train time: 20.9 min remaining
+60/258, Train Loss: 0.9878
+Train Dice Coefficient: 0.4781
+Epoch train time: 20.9 min remaining
+70/258, Train Loss: 0.9880
+Train Dice Coefficient: 0.4775
+Epoch train time: 20.9 min remaining
+80/258, Train Loss: 0.9880
+Train Dice Coefficient: 0.4779
+Epoch train time: 20.9 min remaining
+90/258, Train Loss: 0.9890
+Train Dice Coefficient: 0.4781
+Epoch train time: 21.0 min remaining
+100/258, Train Loss: 0.9875
+Train Dice Coefficient: 0.4791
+Epoch train time: 21.0 min remaining
+110/258, Train Loss: 0.9858
+Train Dice Coefficient: 0.4790
+Epoch train time: 21.1 min remaining
+120/258, Train Loss: 0.9877
+Train Dice Coefficient: 0.4805
+Epoch train time: 21.0 min remaining
+130/258, Train Loss: 0.9877
+Train Dice Coefficient: 0.4806
+Epoch train time: 21.1 min remaining
+140/258, Train Loss: 0.9845
+Train Dice Coefficient: 0.4834
+Epoch train time: 21.1 min remaining
+150/258, Train Loss: 0.9856
+Train Dice Coefficient: 0.4829
+Epoch train time: 21.1 min remaining
+160/258, Train Loss: 0.9870
+Train Dice Coefficient: 0.4851
+Epoch train time: 21.1 min remaining
+170/258, Train Loss: 0.9833
+Train Dice Coefficient: 0.4860
+Epoch train time: 21.1 min remaining
+180/258, Train Loss: 0.9836
+Train Dice Coefficient: 0.4861
+Epoch train time: 21.2 min remaining
+190/258, Train Loss: 0.9861
+Train Dice Coefficient: 0.4870
+Epoch train time: 21.1 min remaining
+200/258, Train Loss: 0.9822
+Train Dice Coefficient: 0.4918
+Epoch train time: 21.1 min remaining
+210/258, Train Loss: 0.9829
+Train Dice Coefficient: 0.4917
+Epoch train time: 21.1 min remaining
+220/258, Train Loss: 0.9879
+Train Dice Coefficient: 0.4839
+Epoch train time: 21.2 min remaining
+230/258, Train Loss: 0.9789
+Train Dice Coefficient: 0.4942
+Epoch train time: 21.2 min remaining
+240/258, Train Loss: 0.9798
+Train Dice Coefficient: 0.4937
+Epoch train time: 21.1 min remaining
+250/258, Train Loss: 0.9823
+Train Dice Coefficient: 0.4924
+Epoch train time: 21.1 min remaining
+------------------------------
+Epoch loss: 0.9862
+Epoch metric: 0.4821
+******************************
+Validation Loss: 0.9019
+Validation Metric: 0.5432
+Current epoch: 5 
+Current metric: 0.5459
+Best Metric: 0.5432 at epoch 4
+==============================
+Epoch 5/53
+10/258, Train Loss: 0.9944
+Train Dice Coefficient: 0.4890
+Epoch train time: 20.3 min remaining
+forrtl: error (200): program aborting due to control-C event
+Image              PC                Routine            Line        Source
+libifcoremd.dll    00007FFEAE8BDF54  Unknown               Unknown  Unknown
+KERNELBASE.dll     00007FFEF7F9AB73  Unknown               Unknown  Unknown
+KERNEL32.DLL       00007FFEF97174B4  Unknown               Unknown  Unknown
+ntdll.dll          00007FFEFA4C26A1  Unknown               Unknown  Unknown
+
+(base) C:\Users\jh3chu\OneDrive - University of Waterloo\OrthoTron\4. Projects\Spine DTI\UNet_FOV_Detection>C:/ProgramData/Miniconda3/python.exe "c:/Users/jh3chu/OneDrive - University of Waterloo/OrthoTron/4. Projects/Spine DTI/UNet_FOV_Detection/run.py"
+<frozen importlib._bootstrap>:219: RuntimeWarning: scipy._lib.messagestream.MessageStream size changed, may indicate binary incompatibility. Expected 56 from C header, got 64 from PyObject
+C:\ProgramData\Miniconda3\lib\site-packages\torchaudio\extension\extension.py:14: UserWarning: torchaudio C++ extension is not available.
+  warnings.warn('torchaudio C++ extension is not available.')
+C:\ProgramData\Miniconda3\lib\site-packages\torchaudio\backend\utils.py:88: UserWarning: No audio backend is available.
+  warnings.warn('No audio backend is available.')
+C:\ProgramData\Miniconda3\lib\site-packages\monai\utils\deprecate_utils.py:219: FutureWarning: monai.networks.nets.unet UNet.__init__:dimensions: Argument `dimensions` has been deprecated since version 0.6. Please use `spatial_dims` instead.
+  warn_deprecated(argname, msg, warning_category)
+Loading checkpoint...
+checkpoint_4.pth...
+Complete
+==============================
+Epoch 5/54
+C:\ProgramData\Miniconda3\lib\site-packages\torch\tensor.py:995: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  ret = func(*args, **kwargs)
+10/258, Train Loss: 0.9829
+Train Dice Coefficient: 0.4931
+Epoch train time: 21.8 min remaining
+20/258, Train Loss: 0.9802
+Train Dice Coefficient: 0.4948
+Epoch train time: 21.7 min remaining
+30/258, Train Loss: 0.9770
+Train Dice Coefficient: 0.4961
+Epoch train time: 21.5 min remaining
+40/258, Train Loss: 0.9815
+Train Dice Coefficient: 0.4947
+Epoch train time: 21.4 min remaining
+50/258, Train Loss: 0.9748
+Train Dice Coefficient: 0.4972
+Epoch train time: 21.3 min remaining
+60/258, Train Loss: 0.9754
+Train Dice Coefficient: 0.4967
+Epoch train time: 21.2 min remaining
+70/258, Train Loss: 0.9735
+Train Dice Coefficient: 0.4988
+Epoch train time: 21.3 min remaining
+80/258, Train Loss: 0.9907
+Train Dice Coefficient: 0.4773
+Epoch train time: 21.2 min remaining
+90/258, Train Loss: 0.9746
+Train Dice Coefficient: 0.4977
+Epoch train time: 21.2 min remaining
+100/258, Train Loss: 0.9838
+Train Dice Coefficient: 0.4939
+Epoch train time: 21.2 min remaining
+110/258, Train Loss: 0.9759
+Train Dice Coefficient: 0.4975
+Epoch train time: 21.2 min remaining
+120/258, Train Loss: 0.9788
+Train Dice Coefficient: 0.4960
+Epoch train time: 21.2 min remaining
+130/258, Train Loss: 0.9864
+Train Dice Coefficient: 0.4923
+Epoch train time: 21.1 min remaining
+140/258, Train Loss: 0.9807
+Train Dice Coefficient: 0.4920
+Epoch train time: 21.2 min remaining
+150/258, Train Loss: 0.9806
+Train Dice Coefficient: 0.4960
+Epoch train time: 21.1 min remaining
+160/258, Train Loss: 0.9748
+Train Dice Coefficient: 0.4977
+Epoch train time: 21.2 min remaining
+170/258, Train Loss: 0.9810
+Train Dice Coefficient: 0.4955
+Epoch train time: 21.2 min remaining
+180/258, Train Loss: 0.9788
+Train Dice Coefficient: 0.4965
+Epoch train time: 21.2 min remaining
+190/258, Train Loss: 0.9795
+Train Dice Coefficient: 0.4950
+Epoch train time: 21.2 min remaining
+200/258, Train Loss: 0.9773
+Train Dice Coefficient: 0.4972
+Epoch train time: 21.2 min remaining
+210/258, Train Loss: 0.9762
+Train Dice Coefficient: 0.4977
+Epoch train time: 21.2 min remaining
+220/258, Train Loss: 0.9806
+Train Dice Coefficient: 0.4950
+Epoch train time: 21.2 min remaining
+230/258, Train Loss: 0.9829
+Train Dice Coefficient: 0.4931
+Epoch train time: 21.0 min remaining
+240/258, Train Loss: 0.9772
+Train Dice Coefficient: 0.4969
+Epoch train time: 21.1 min remaining
+250/258, Train Loss: 0.9871
+Train Dice Coefficient: 0.4940
+Epoch train time: 21.1 min remaining
+------------------------------
+Epoch loss: 0.9797
+Epoch metric: 0.4925
+******************************
+Validation Loss: 0.8292
+Validation Metric: 0.5798
+Current epoch: 6 
+Current metric: 0.5824
+Best Metric: 0.5798 at epoch 5
+==============================
+Epoch 6/54
+forrtl: error (200): program aborting due to control-C event
+Image              PC                Routine            Line        Source
+libifcoremd.dll    00007FFEAE8BDF54  Unknown               Unknown  Unknown
+KERNELBASE.dll     00007FFEF7F9AB73  Unknown               Unknown  Unknown
+KERNEL32.DLL       00007FFEF97174B4  Unknown               Unknown  Unknown
+ntdll.dll          00007FFEFA4C26A1  Unknown               Unknown  Unknown
+
+(base) C:\Users\jh3chu\OneDrive - University of Waterloo\OrthoTron\4. Projects\Spine DTI\UNet_FOV_Detection>C:/ProgramData/Miniconda3/python.exe "c:/Users/jh3chu/OneDrive - University of Waterloo/OrthoTron/4. Projects/Spine DTI/UNet_FOV_Detection/run.py"
+<frozen importlib._bootstrap>:219: RuntimeWarning: scipy._lib.messagestream.MessageStream size changed, may indicate binary incompatibility. Expected 56 from C header, got 64 from PyObject
+C:\ProgramData\Miniconda3\lib\site-packages\torchaudio\extension\extension.py:14: UserWarning: torchaudio C++ extension is not available.
+  warnings.warn('torchaudio C++ extension is not available.')
+C:\ProgramData\Miniconda3\lib\site-packages\torchaudio\backend\utils.py:88: UserWarning: No audio backend is available.
+  warnings.warn('No audio backend is available.')
+C:\ProgramData\Miniconda3\lib\site-packages\monai\utils\deprecate_utils.py:219: FutureWarning: monai.networks.nets.unet UNet.__init__:dimensions: Argument `dimensions` has been deprecated since version 0.6. Please use `spatial_dims` instead.
+  warn_deprecated(argname, msg, warning_category)
+Loading checkpoint...
+checkpoint_5.pth...
+Complete
+==============================
+Epoch 6/55
+C:\ProgramData\Miniconda3\lib\site-packages\torch\tensor.py:995: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  ret = func(*args, **kwargs)
+10/258, Train Loss: 0.9774
+Train Dice Coefficient: 0.4974
+Epoch train time: 21.7 min remaining
+20/258, Train Loss: 0.9792
+Train Dice Coefficient: 0.4953
+Epoch train time: 21.6 min remaining
+30/258, Train Loss: 0.9817
+Train Dice Coefficient: 0.4958
+Epoch train time: 21.4 min remaining
+40/258, Train Loss: 0.9782
+Train Dice Coefficient: 0.4989
+Epoch train time: 21.4 min remaining
+50/258, Train Loss: 0.9804
+Train Dice Coefficient: 0.4959
+Epoch train time: 21.3 min remaining
+60/258, Train Loss: 0.9763
+Train Dice Coefficient: 0.4976
+Epoch train time: 21.3 min remaining
+70/258, Train Loss: 0.9802
+Train Dice Coefficient: 0.4961
+Epoch train time: 21.2 min remaining
+80/258, Train Loss: 0.9746
+Train Dice Coefficient: 0.4981
+Epoch train time: 21.0 min remaining
+90/258, Train Loss: 0.9758
+Train Dice Coefficient: 0.4983
+Epoch train time: 20.9 min remaining
+100/258, Train Loss: 0.9784
+Train Dice Coefficient: 0.4981
+Epoch train time: 20.9 min remaining
+110/258, Train Loss: 0.9795
+Train Dice Coefficient: 0.4967
+Epoch train time: 20.9 min remaining
+120/258, Train Loss: 0.9770
+Train Dice Coefficient: 0.4976
+Epoch train time: 20.9 min remaining
+130/258, Train Loss: 0.9782
+Train Dice Coefficient: 0.4970
+Epoch train time: 20.9 min remaining
+140/258, Train Loss: 0.9596
+Train Dice Coefficient: 0.5136
+Epoch train time: 20.9 min remaining
+150/258, Train Loss: 0.9270
+Train Dice Coefficient: 0.5317
+Epoch train time: 21.0 min remaining
+160/258, Train Loss: 0.9134
+Train Dice Coefficient: 0.5343
+Epoch train time: 21.0 min remaining
+170/258, Train Loss: 0.6833
+Train Dice Coefficient: 0.6519
+Epoch train time: 21.0 min remaining
+180/258, Train Loss: 0.8225
+Train Dice Coefficient: 0.5776
+Epoch train time: 21.0 min remaining
+190/258, Train Loss: 0.4980
+Train Dice Coefficient: 0.7449
+Epoch train time: 21.0 min remaining
+200/258, Train Loss: 0.4246
+Train Dice Coefficient: 0.7812
+Epoch train time: 21.0 min remaining
+210/258, Train Loss: 0.3292
+Train Dice Coefficient: 0.8276
+Epoch train time: 21.0 min remaining
+220/258, Train Loss: 0.3767
+Train Dice Coefficient: 0.8015
+Epoch train time: 21.0 min remaining
+230/258, Train Loss: 0.5742
+Train Dice Coefficient: 0.7018
+Epoch train time: 21.0 min remaining
+240/258, Train Loss: 0.3731
+Train Dice Coefficient: 0.8025
+Epoch train time: 21.0 min remaining
+250/258, Train Loss: 0.2529
+Train Dice Coefficient: 0.8680
+Epoch train time: 21.0 min remaining
+------------------------------
+Epoch loss: 0.7654
+Epoch metric: 0.6061
+******************************
+Validation Loss: 0.1881
+Validation Metric: 0.9012
+Current epoch: 7 
+Current metric: 0.8863
+Best Metric: 0.9012 at epoch 6
+==============================
+Epoch 7/55
+forrtl: error (200): program aborting due to control-C event
+Image              PC                Routine            Line        Source
+libifcoremd.dll    00007FFEAE8BDF54  Unknown               Unknown  Unknown
+KERNELBASE.dll     00007FFEF7F9AB73  Unknown               Unknown  Unknown
+KERNEL32.DLL       00007FFEF97174B4  Unknown               Unknown  Unknown
+ntdll.dll          00007FFEFA4C26A1  Unknown               Unknown  Unknown
+
+(base) C:\Users\jh3chu\OneDrive - University of Waterloo\OrthoTron\4. Projects\Spine DTI\UNet_FOV_Detection>C:/ProgramData/Miniconda3/python.exe "c:/Users/jh3chu/OneDrive - University of Waterloo/OrthoTron/4. Projects/Spine DTI/UNet_FOV_Detection/run.py"
+<frozen importlib._bootstrap>:219: RuntimeWarning: scipy._lib.messagestream.MessageStream size changed, may indicate binary incompatibility. Expected 56 from C header, got 64 from PyObject
+C:\ProgramData\Miniconda3\lib\site-packages\torchaudio\extension\extension.py:14: UserWarning: torchaudio C++ extension is not available.
+  warnings.warn('torchaudio C++ extension is not available.')
+C:\ProgramData\Miniconda3\lib\site-packages\torchaudio\backend\utils.py:88: UserWarning: No audio backend is available.
+  warnings.warn('No audio backend is available.')
+C:\ProgramData\Miniconda3\lib\site-packages\monai\utils\deprecate_utils.py:219: FutureWarning: monai.networks.nets.unet UNet.__init__:dimensions: Argument `dimensions` has been deprecated since version 0.6. Please use `spatial_dims` instead.
+  warn_deprecated(argname, msg, warning_category)
+Loading checkpoint...
+checkpoint_6.pth...
+Complete
+==============================
+Epoch 7/56
+C:\ProgramData\Miniconda3\lib\site-packages\torch\tensor.py:995: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  ret = func(*args, **kwargs)
+10/258, Train Loss: 0.2334
+Train Dice Coefficient: 0.8782
+Epoch train time: 21.9 min remaining
+20/258, Train Loss: 0.2133
+Train Dice Coefficient: 0.8888
+Epoch train time: 21.6 min remaining
+30/258, Train Loss: 0.1613
+Train Dice Coefficient: 0.9140
+Epoch train time: 22.1 min remaining
+40/258, Train Loss: 0.2008
+Train Dice Coefficient: 0.8944
+Epoch train time: 22.3 min remaining
+50/258, Train Loss: 0.3384
+Train Dice Coefficient: 0.8244
+Epoch train time: 22.6 min remaining
+60/258, Train Loss: 0.1936
+Train Dice Coefficient: 0.8987
+Epoch train time: 22.7 min remaining
+70/258, Train Loss: 0.1809
+Train Dice Coefficient: 0.9050
+Epoch train time: 22.8 min remaining
+80/258, Train Loss: 0.2001
+Train Dice Coefficient: 0.8961
+Epoch train time: 22.9 min remaining
+90/258, Train Loss: 0.2110
+Train Dice Coefficient: 0.8904
+Epoch train time: 23.0 min remaining
+100/258, Train Loss: 0.1920
+Train Dice Coefficient: 0.8995
+Epoch train time: 23.1 min remaining
+110/258, Train Loss: 0.1778
+Train Dice Coefficient: 0.9060
+Epoch train time: 23.1 min remaining
+120/258, Train Loss: 0.1471
+Train Dice Coefficient: 0.9229
+Epoch train time: 23.2 min remaining
+130/258, Train Loss: 0.4013
+Train Dice Coefficient: 0.7847
+Epoch train time: 23.2 min remaining
+140/258, Train Loss: 0.2402
+Train Dice Coefficient: 0.8737
+Epoch train time: 23.2 min remaining
+150/258, Train Loss: 0.1143
+Train Dice Coefficient: 0.9392
+Epoch train time: 23.2 min remaining
+160/258, Train Loss: 0.2378
+Train Dice Coefficient: 0.8712
+Epoch train time: 23.2 min remaining
+170/258, Train Loss: 0.1573
+Train Dice Coefficient: 0.9177
+Epoch train time: 23.2 min remaining
+180/258, Train Loss: 0.1908
+Train Dice Coefficient: 0.8994
+Epoch train time: 23.2 min remaining
+190/258, Train Loss: 0.2207
+Train Dice Coefficient: 0.8845
+Epoch train time: 23.3 min remaining
+200/258, Train Loss: 0.2660
+Train Dice Coefficient: 0.8583
+Epoch train time: 23.1 min remaining
+210/258, Train Loss: 0.5367
+Train Dice Coefficient: 0.7131
+Epoch train time: 23.2 min remaining
+220/258, Train Loss: 0.1225
+Train Dice Coefficient: 0.9353
+Epoch train time: 23.2 min remaining
+230/258, Train Loss: 0.1263
+Train Dice Coefficient: 0.9340
+Epoch train time: 23.2 min remaining
+240/258, Train Loss: 0.1075
+Train Dice Coefficient: 0.9434
+Epoch train time: 23.2 min remaining
+250/258, Train Loss: 0.2065
+Train Dice Coefficient: 0.8904
+Epoch train time: 23.2 min remaining
+------------------------------
+Epoch loss: 0.1859
+Epoch metric: 0.9023
+******************************
+Validation Loss: 0.1755
+Validation Metric: 0.9070
+Current epoch: 8
+Current metric: 0.7983
+Best Metric: 0.9070 at epoch 7
+==============================
+Epoch 8/56
+10/258, Train Loss: 0.8766
+Train Dice Coefficient: 0.5073
+Epoch train time: 23.1 min remaining
+20/258, Train Loss: 0.0963
+Train Dice Coefficient: 0.9491
+Epoch train time: 22.9 min remaining
+30/258, Train Loss: 0.1547
+Train Dice Coefficient: 0.9183
+Epoch train time: 22.6 min remaining
+forrtl: error (200): program aborting due to control-C event
+Image              PC                Routine            Line        Source
+libifcoremd.dll    00007FFEAE8BDF54  Unknown               Unknown  Unknown
+KERNELBASE.dll     00007FFEF7F9AB73  Unknown               Unknown  Unknown
+KERNEL32.DLL       00007FFEF97174B4  Unknown               Unknown  Unknown
+ntdll.dll          00007FFEFA4C26A1  Unknown               Unknown  Unknown
+
+(base) C:\Users\jh3chu\OneDrive - University of Waterloo\OrthoTron\4. Projects\Spine DTI\UNet_FOV_Detection>C:/ProgramData/Miniconda3/python.exe "c:/Users/jh3chu/OneDrive - University of Waterloo/OrthoTron/4. Projects/Spine DTI/UNet_FOV_Detection/run.py"
+<frozen importlib._bootstrap>:219: RuntimeWarning: scipy._lib.messagestream.MessageStream size changed, may indicate binary incompatibility. Expected 56 from C header, got 64 from PyObject
+C:\ProgramData\Miniconda3\lib\site-packages\torchaudio\extension\extension.py:14: UserWarning: torchaudio C++ extension is not available.
+  warnings.warn('torchaudio C++ extension is not available.')
+C:\ProgramData\Miniconda3\lib\site-packages\torchaudio\backend\utils.py:88: UserWarning: No audio backend is available.
+  warnings.warn('No audio backend is available.')
+C:\ProgramData\Miniconda3\lib\site-packages\monai\utils\deprecate_utils.py:219: FutureWarning: monai.networks.nets.unet UNet.__init__:dimensions: Argument `dimensions` has been deprecated since version 0.6. Please use `spatial_dims` instead.
+  warn_deprecated(argname, msg, warning_category)
+Loading checkpoint...
+checkpoint_7.pth...
+Complete
+==============================
+Epoch 8/57
+C:\ProgramData\Miniconda3\lib\site-packages\torch\tensor.py:995: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  ret = func(*args, **kwargs)
+10/258, Train Loss: 0.1779
+Train Dice Coefficient: 0.9070
+Epoch train time: 21.7 min remaining
+20/258, Train Loss: 0.2047
+Train Dice Coefficient: 0.8922
+Epoch train time: 21.3 min remaining
+30/258, Train Loss: 0.2630
+Train Dice Coefficient: 0.8593
+Epoch train time: 20.5 min remaining
+40/258, Train Loss: 0.1412
+Train Dice Coefficient: 0.9264
+Epoch train time: 20.8 min remaining
+50/258, Train Loss: 0.1243
+Train Dice Coefficient: 0.9349
+Epoch train time: 20.9 min remaining
+60/258, Train Loss: 0.1410
+Train Dice Coefficient: 0.9261
+Epoch train time: 21.0 min remaining
+70/258, Train Loss: 0.2134
+Train Dice Coefficient: 0.8871
+Epoch train time: 21.0 min remaining
+80/258, Train Loss: 0.0933
+Train Dice Coefficient: 0.9507
+Epoch train time: 20.9 min remaining
+90/258, Train Loss: 0.1390
+Train Dice Coefficient: 0.9278
+Epoch train time: 21.0 min remaining
+100/258, Train Loss: 0.1592
+Train Dice Coefficient: 0.9168
+Epoch train time: 21.0 min remaining
+110/258, Train Loss: 0.1808
+Train Dice Coefficient: 0.9056
+Epoch train time: 21.0 min remaining
+120/258, Train Loss: 0.0994
+Train Dice Coefficient: 0.9473
+Epoch train time: 21.0 min remaining
+130/258, Train Loss: 0.1922
+Train Dice Coefficient: 0.8964
+Epoch train time: 21.0 min remaining
+140/258, Train Loss: 0.1260
+Train Dice Coefficient: 0.9342
+Epoch train time: 21.0 min remaining
+150/258, Train Loss: 0.1083
+Train Dice Coefficient: 0.9429
+Epoch train time: 21.0 min remaining
+160/258, Train Loss: 0.1498
+Train Dice Coefficient: 0.9218
+Epoch train time: 21.0 min remaining
+170/258, Train Loss: 0.1470
+Train Dice Coefficient: 0.9222
+Epoch train time: 21.0 min remaining
+180/258, Train Loss: 0.1105
+Train Dice Coefficient: 0.9416
+Epoch train time: 21.0 min remaining
+190/258, Train Loss: 0.1511
+Train Dice Coefficient: 0.9207
+Epoch train time: 21.0 min remaining
+200/258, Train Loss: 0.0902
+Train Dice Coefficient: 0.9523
+Epoch train time: 21.0 min remaining
+210/258, Train Loss: 0.1559
+Train Dice Coefficient: 0.9184
+Epoch train time: 21.0 min remaining
+220/258, Train Loss: 0.1358
+Train Dice Coefficient: 0.9289
+Epoch train time: 21.0 min remaining
+230/258, Train Loss: 0.1240
+Train Dice Coefficient: 0.9347
+Epoch train time: 21.0 min remaining
+240/258, Train Loss: 0.0956
+Train Dice Coefficient: 0.9499
+Epoch train time: 21.0 min remaining
+250/258, Train Loss: 0.1163
+Train Dice Coefficient: 0.9392
+Epoch train time: 21.0 min remaining
+------------------------------
+Epoch loss: 0.1341
+Epoch metric: 0.9294
+******************************
+Validation Loss: 0.1277
+Validation Metric: 0.9329
+Current epoch: 9 
+Current metric: 0.9481
+Best Metric: 0.9329 at epoch 8
+==============================
+Epoch 9/57
+forrtl: error (200): program aborting due to control-C event
+Image              PC                Routine            Line        Source
+libifcoremd.dll    00007FFEAE8BDF54  Unknown               Unknown  Unknown
+KERNELBASE.dll     00007FFEF7F9AB73  Unknown               Unknown  Unknown
+KERNEL32.DLL       00007FFEF97174B4  Unknown               Unknown  Unknown
+ntdll.dll          00007FFEFA4C26A1  Unknown               Unknown  Unknown
+
+(base) C:\Users\jh3chu\OneDrive - University of Waterloo\OrthoTron\4. Projects\Spine DTI\UNet_FOV_Detection>C:/ProgramData/Miniconda3/python.exe "c:/Users/jh3chu/OneDrive - University of Waterloo/OrthoTron/4. Projects/Spine DTI/UNet_FOV_Detection/run.py"
+<frozen importlib._bootstrap>:219: RuntimeWarning: scipy._lib.messagestream.MessageStream size changed, may indicate binary incompatibility. Expected 56 from C header, got 64 from PyObject
+C:\ProgramData\Miniconda3\lib\site-packages\torchaudio\extension\extension.py:14: UserWarning: torchaudio C++ extension is not available.
+  warnings.warn('torchaudio C++ extension is not available.')
+C:\ProgramData\Miniconda3\lib\site-packages\torchaudio\backend\utils.py:88: UserWarning: No audio backend is available.
+  warnings.warn('No audio backend is available.')
+C:\ProgramData\Miniconda3\lib\site-packages\monai\utils\deprecate_utils.py:219: FutureWarning: monai.networks.nets.unet UNet.__init__:dimensions: Argument `dimensions` has been deprecated since version 0.6. Please use `spatial_dims` instead.
+  warn_deprecated(argname, msg, warning_category)
+Loading checkpoint...
+checkpoint_8.pth...
+Complete
+==============================
+Epoch 9/58
+C:\ProgramData\Miniconda3\lib\site-packages\torch\tensor.py:995: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  ret = func(*args, **kwargs)
+10/258, Train Loss: 0.0924
+Train Dice Coefficient: 0.9514
+Epoch train time: 21.1 min remaining
+20/258, Train Loss: 0.1010
+Train Dice Coefficient: 0.9470
+Epoch train time: 21.1 min remaining
+30/258, Train Loss: 0.1562
+Train Dice Coefficient: 0.9170
+Epoch train time: 21.1 min remaining
+40/258, Train Loss: 0.1170
+Train Dice Coefficient: 0.9383
+Epoch train time: 21.1 min remaining
+50/258, Train Loss: 0.1119
+Train Dice Coefficient: 0.9412
+Epoch train time: 20.8 min remaining
+60/258, Train Loss: 0.1049
+Train Dice Coefficient: 0.9449
+Epoch train time: 20.8 min remaining
+70/258, Train Loss: 0.1304
+Train Dice Coefficient: 0.9317
+Epoch train time: 20.7 min remaining
+80/258, Train Loss: 0.0822
+Train Dice Coefficient: 0.9568
+Epoch train time: 20.7 min remaining
+90/258, Train Loss: 0.1162
+Train Dice Coefficient: 0.9374
+Epoch train time: 20.8 min remaining
+100/258, Train Loss: 0.1421
+Train Dice Coefficient: 0.9258
+Epoch train time: 20.8 min remaining
+110/258, Train Loss: 0.0834
+Train Dice Coefficient: 0.9563
+Epoch train time: 20.9 min remaining
+120/258, Train Loss: 0.0994
+Train Dice Coefficient: 0.9478
+Epoch train time: 20.9 min remaining
+130/258, Train Loss: 0.1513
+Train Dice Coefficient: 0.9204
+Epoch train time: 20.9 min remaining
+140/258, Train Loss: 0.1078
+Train Dice Coefficient: 0.9438
+Epoch train time: 20.9 min remaining
+150/258, Train Loss: 0.1310
+Train Dice Coefficient: 0.9309
+Epoch train time: 20.9 min remaining
+160/258, Train Loss: 0.1265
+Train Dice Coefficient: 0.9340
+Epoch train time: 20.9 min remaining
+170/258, Train Loss: 0.0902
+Train Dice Coefficient: 0.9526
+Epoch train time: 20.9 min remaining
+180/258, Train Loss: 0.0835
+Train Dice Coefficient: 0.9561
+Epoch train time: 20.9 min remaining
+190/258, Train Loss: 0.1707
+Train Dice Coefficient: 0.9106
+Epoch train time: 21.0 min remaining
+200/258, Train Loss: 0.1793
+Train Dice Coefficient: 0.9041
+Epoch train time: 21.0 min remaining
+210/258, Train Loss: 0.0887
+Train Dice Coefficient: 0.9535
+Epoch train time: 21.0 min remaining
+220/258, Train Loss: 0.0745
+Train Dice Coefficient: 0.9607
+Epoch train time: 21.0 min remaining
+230/258, Train Loss: 0.1572
+Train Dice Coefficient: 0.9162
+Epoch train time: 20.9 min remaining
+240/258, Train Loss: 0.1645
+Train Dice Coefficient: 0.9138
+Epoch train time: 20.9 min remaining
+250/258, Train Loss: 0.1598
+Train Dice Coefficient: 0.9157
+Epoch train time: 20.9 min remaining
+------------------------------
+Epoch loss: 0.1130
+Epoch metric: 0.9405
+******************************
+Validation Loss: 0.1347
+Validation Metric: 0.9291
+Current epoch: 10 
+Current metric: 0.9404
+Best Metric: 0.9291 at epoch 9
+==============================
+Epoch 10/58
+forrtl: error (200): program aborting due to control-C event
+Image              PC                Routine            Line        Source
+libifcoremd.dll    00007FFEAE8BDF54  Unknown               Unknown  Unknown
+KERNELBASE.dll     00007FFEF7F9AB73  Unknown               Unknown  Unknown
+KERNEL32.DLL       00007FFEF97174B4  Unknown               Unknown  Unknown
+ntdll.dll          00007FFEFA4C26A1  Unknown               Unknown  Unknown
+
+(base) C:\Users\jh3chu\OneDrive - University of Waterloo\OrthoTron\4. Projects\Spine DTI\UNet_FOV_Detection>C:/ProgramData/Miniconda3/python.exe "c:/Users/jh3chu/OneDrive - University of Waterloo/OrthoTron/4. Projects/Spine DTI/UNet_FOV_Detection/run.py"
+<frozen importlib._bootstrap>:219: RuntimeWarning: scipy._lib.messagestream.MessageStream size changed, may indicate binary incompatibility. Expected 56 from C header, got 64 from PyObject
+C:\ProgramData\Miniconda3\lib\site-packages\torchaudio\extension\extension.py:14: UserWarning: torchaudio C++ extension is not available.
+  warnings.warn('torchaudio C++ extension is not available.')
+C:\ProgramData\Miniconda3\lib\site-packages\torchaudio\backend\utils.py:88: UserWarning: No audio backend is available.
+  warnings.warn('No audio backend is available.')
+C:\ProgramData\Miniconda3\lib\site-packages\monai\utils\deprecate_utils.py:219: FutureWarning: monai.networks.nets.unet UNet.__init__:dimensions: Argument `dimensions` has been deprecated since version 0.6. Please use `spatial_dims` instead.
+  warn_deprecated(argname, msg, warning_category)
+Loading checkpoint...
+checkpoint_9.pth...
+Complete
+==============================
+Epoch 10/59
+C:\ProgramData\Miniconda3\lib\site-packages\torch\tensor.py:995: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  ret = func(*args, **kwargs)
+10/258, Train Loss: 0.1061
+Train Dice Coefficient: 0.9447
+Epoch train time: 21.8 min remaining
+20/258, Train Loss: 0.0888
+Train Dice Coefficient: 0.9531
+Epoch train time: 21.4 min remaining
+30/258, Train Loss: 0.0939
+Train Dice Coefficient: 0.9504
+Epoch train time: 21.1 min remaining
+40/258, Train Loss: 0.1079
+Train Dice Coefficient: 0.9433
+Epoch train time: 21.2 min remaining
+50/258, Train Loss: 0.0863
+Train Dice Coefficient: 0.9547
+Epoch train time: 21.0 min remaining
+60/258, Train Loss: 0.0865
+Train Dice Coefficient: 0.9547
+Epoch train time: 21.0 min remaining
+70/258, Train Loss: 0.1455
+Train Dice Coefficient: 0.9239
+Epoch train time: 21.0 min remaining
+80/258, Train Loss: 0.0692
+Train Dice Coefficient: 0.9636
+Epoch train time: 21.0 min remaining
+90/258, Train Loss: 0.1074
+Train Dice Coefficient: 0.9441
+Epoch train time: 21.0 min remaining
+100/258, Train Loss: 0.0641
+Train Dice Coefficient: 0.9660
+Epoch train time: 21.0 min remaining
+110/258, Train Loss: 0.0724
+Train Dice Coefficient: 0.9617
+Epoch train time: 21.0 min remaining
+120/258, Train Loss: 0.0644
+Train Dice Coefficient: 0.9657
+Epoch train time: 21.1 min remaining
+130/258, Train Loss: 0.1878
+Train Dice Coefficient: 0.8997
+Epoch train time: 21.0 min remaining
+140/258, Train Loss: 0.1023
+Train Dice Coefficient: 0.9463
+Epoch train time: 21.0 min remaining
+150/258, Train Loss: 0.1246
+Train Dice Coefficient: 0.9352
+Epoch train time: 21.0 min remaining
+160/258, Train Loss: 0.0862
+Train Dice Coefficient: 0.9548
+Epoch train time: 21.0 min remaining
+170/258, Train Loss: 0.1141
+Train Dice Coefficient: 0.9398
+Epoch train time: 21.0 min remaining
+180/258, Train Loss: 0.1048
+Train Dice Coefficient: 0.9442
+Epoch train time: 21.0 min remaining
+190/258, Train Loss: 0.2097
+Train Dice Coefficient: 0.8898
+Epoch train time: 21.0 min remaining
+200/258, Train Loss: 0.0813
+Train Dice Coefficient: 0.9574
+Epoch train time: 21.0 min remaining
+210/258, Train Loss: 0.1400
+Train Dice Coefficient: 0.9260
+Epoch train time: 21.0 min remaining
+220/258, Train Loss: 0.1142
+Train Dice Coefficient: 0.9402
+Epoch train time: 21.0 min remaining
+230/258, Train Loss: 0.0670
+Train Dice Coefficient: 0.9649
+Epoch train time: 21.0 min remaining
+240/258, Train Loss: 0.0927
+Train Dice Coefficient: 0.9515
+Epoch train time: 21.0 min remaining
+250/258, Train Loss: 0.0764
+Train Dice Coefficient: 0.9600
+Epoch train time: 20.9 min remaining
+------------------------------
+Epoch loss: 0.1066
+Epoch metric: 0.9438
+******************************
+Validation Loss: 0.0966
+Validation Metric: 0.9491
+Current epoch: 11 
+Current metric: 0.9215
+Best Metric: 0.9491 at epoch 10

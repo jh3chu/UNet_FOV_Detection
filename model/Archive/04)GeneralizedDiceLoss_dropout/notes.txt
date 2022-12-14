@@ -1,0 +1,1 @@
+best so far - generalized dice loss doesnt go down much, but dice metric goes up
