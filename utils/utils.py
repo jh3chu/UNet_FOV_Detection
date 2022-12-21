@@ -3,18 +3,14 @@ import re
 import numpy as np
 import pandas as pd
 import shutil 
-import torch
-import torchvision
 import nibabel as nib
 import matplotlib.pyplot as plt
 from glob import glob
 
 from monai.transforms import (
     Compose,
-    AddChanneld,
     EnsureChannelFirstd,
     LoadImaged,
-    Resized,
     DivisiblePadd,
     ToTensord,
     RandFlipd,
@@ -23,19 +19,24 @@ from monai.transforms import (
 from monai.utils import first
 from monai.data import DataLoader, Dataset
 from monai.losses import DiceLoss
-from monai.metrics import DiceMetric
 
-# Copy files to new directory in sorted modality sorted folders
 def copy_files(
     root_dir=r'D:\Jonathan\2_Projects\Fov_Detection\SpineGen_T1-T2-results\data_processed', 
-    fn_keys=('img', 'seg'), 
     p1 = '_RPI_r.nii.gz', 
     p2='_RPI_r_seg.nii.gz$',
     new_dir = r'D:\Jonathan\2_Projects\Fov_Detection\FoV_Data',
 ):
     '''
-    NEED TO MANUAL SEPARATE DATA INTO T1/T2 FOLDERS AND MOVE VALIDATION SET
+    Copy SCT output files to new directory sorted by modality.
+
+    Params:
+        root_dir: Source directory of SCT output
+        p1: Regex pattern for anatomical image
+        p2: Regex pattern for SCT output
+        new_dir: Destination directory for copied SCT output files sorted by modality
     '''
+    ###  NOTE: NEED TO MANUALLY SEPARATE DATA INTO T1/T2 FOLDERS AND MOVE VALIDATION SET ###
+
     if not os.path.exists(os.path.join(new_dir, 'train_img')):
         os.makedirs(os.path.join(new_dir, 'train_img'))
     if not os.path.exists(os.path.join(new_dir, 'train_seg')):
@@ -60,9 +61,6 @@ def copy_files(
     # Loop through T1 and T2 images for labelled segmentations
     for i in img_filenames:
         regex2 = i.split('\\')[-1].split('.')[0].split('_')[1]
-        
-        # Read labelled data
-        # regex2 = str(regex2 + '_RPI_r_seg_labeled.nii.gz$')
 
         # Read segmentation data
         regex2 = str(regex2 + p2)
@@ -122,11 +120,11 @@ def normalize_preprocess(
     val_root_dir,
 ):
     '''
-    Manual normalization preprocessing
-    :params: 
-        train_root_dir: root dir of training images for saving
-        val_root_dir: root dir of validation images for saving
-    :outputs:
+    Normalization preprocessing
+
+    Params: 
+        train_root_dir: Source dir of training images for normalization
+        val_root_dir: Source dir of validation images for normalization
     '''
     # Normalize training set
     train_file_paths = [x for x in os.listdir(train_root_dir) if x not in ['Normalized', 'Archive']]
@@ -205,14 +203,16 @@ def normalize_preprocess(
 def preprocess(train_dir, train_seg_dir, val_dir, val_seg_dir):
     '''
     Preprocessing to generate dictionary of images and corresponding labels
-    :params:
-        train_dir: root directory of training images
-        train_seg_dir: root directory of segmentation images
-        val_dir: root directory of validation images
-        val_sef_images: root directory of validation segmentations
-    :outputs:
-        train_files: dictionary of training images ['img'] and corresponding labels ['seg']
-        val_files: dictionary of training images ['img'] and corresponding labels ['seg']
+    
+    Params:
+        train_dir: Source directory of training images
+        train_seg_dir: Source directory of segmentation images
+        val_dir: Source directory of validation images
+        val_sef_images: Source directory of validation segmentations
+    
+    Outputs:
+        train_files: Dictionary of paths of training images ['img'] and corresponding labels ['seg']
+        val_files: Dictionary of paths of training images ['img'] and corresponding labels ['seg']
     '''
     path_train_images = sorted(glob(os.path.join(train_dir, '*.nii.gz')))
     path_train_seg = sorted(glob(os.path.join(train_seg_dir, '*.nii.gz')))
@@ -231,21 +231,20 @@ def get_loaders(
     val_files, 
     batch_size, 
     num_workers,
-    pixdim=(1.5, 1.5, 1.0), 
-    a_min=0, a_max=1500,
-    spatial_size=[160, 160, 160],
     ):
     '''
     Transforms input and creates dataloaders
-    :params:
-        train_files: training file paths in dictionary with ['img'] and ['seg] paths
-        val_files: validation file paths in dictionary with ['img'] and ['seg] paths
-        batch_size: batch size for loader
-        shuffle: bool to shuffle data to loader
-        spatial_size: Corresponds to the min number of actual spatial slices divisible by {struid}**{# layers} -> eg. 2**5
-    :outputs:
-        train_loader: training loader
-        val_loader: validation loader
+    
+    Params:
+        train_files: Training file paths in dictionary with ['img'] and ['seg] paths
+        val_files: Validation file paths in dictionary with ['img'] and ['seg] paths
+        batch_size: Batch size for loader
+        shuffle: Bool to shuffle data to loader
+        spatial_size: Corresponds to the min number of actual spatial slices divisible by {stride}**{# U-Net layers} -> eg. 2**5 = 32
+    
+    Outputs:
+        train_loader: Training loader
+        val_loader: Validation loader
     '''
     train_transform = Compose(
         [
@@ -286,7 +285,6 @@ def get_loaders(
         train_ds, 
         batch_size=batch_size, 
         shuffle=True, 
-        #collate_fn=pad_list_data_collate,
         num_workers=num_workers,
         # pin_memory=True,
     )
@@ -296,7 +294,6 @@ def get_loaders(
         val_ds, 
         batch_size=batch_size, 
         shuffle=False, 
-        #collate_fn=pad_list_data_collate,
         num_workers=num_workers,
         # pin_memory=True,
     )
@@ -320,13 +317,18 @@ def show_patient(data, SLICE_NUMBER=120):
     plt.imshow(view_train_patient["seg"][0, 0, :, SLICE_NUMBER, :], cmap='gray')
     plt.show()
 
-def dice_coefficient():
-    pass
 
 def dice_metric(pred, label):
     '''
     In this function we take `predicted` and `target` (label) to calculate the dice coefficient then we use it 
     to calculate a metric value for the training and the validation.
+
+    Params:
+        pred: Model output prediction
+        label: Data label
+    
+    Output:
+        value: Dice coefficient metric
     '''
     dice_value = DiceLoss(
         # to_onehot_y=True, 
