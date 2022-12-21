@@ -1,30 +1,23 @@
 import os
 import numpy as np
 import torch
+import datetime
 import torch.nn as nn
 import torch.optim as optim
 from torch.utils.tensorboard import SummaryWriter
 
 from monai.networks.nets import UNet
 from monai.networks.layers import Norm
-from monai.losses import DiceLoss, GeneralizedDiceLoss
-
-from monai.metrics import DiceMetric
+from monai.losses import GeneralizedDiceLoss
 
 from utils.utils import (
     copy_files, 
     preprocess, 
     get_loaders, 
     normalize_preprocess,
-    show_patient,
 )
 from model.tensorboard_utils import(
     image_grid,
-)
-from monai.utils import first
-from monai.visualize.img2tensorboard import (
-    add_animated_gif, 
-    plot_2d_or_3d_image,
 )
 
 from utils.train import train_fn
@@ -42,8 +35,7 @@ VAL_SEG_DIR = r'D:\Jonathan\2_Projects\Fov_Detection\FoV_Data\val_seg\T1'
 # VAL_IMG_DIR = r'D:\Jonathan\2_Projects\Fov_Detection\FoV_Data\test_img\T1'
 # VAL_SEG_DIR = r'D:\Jonathan\2_Projects\Fov_Detection\FoV_Data\test_seg\T1'
 
-MODEL_SAVE_PATH = 'model'
-
+MODEL_SAVE_PATH = 'test'
 
 COPY_FILES = False
 NORMALIZE = False
@@ -69,7 +61,9 @@ def main():
         batch_size=hp.BATCH_SIZE, 
         num_workers=hp.NUM_WORKERS)
 
-    writer = SummaryWriter('logs', filename_suffix='_lr_{}_epoch{}'.format(hp.LEARNING_RATE, hp.NUM_EPOCH))
+    logdir = 'logs/' + datetime.datetime.now().strftime("%Y%m%d-%H%M%S")
+    os.makedirs(logdir)
+    writer = SummaryWriter(logdir, filename_suffix='_lr_{}_epoch{}'.format(hp.LEARNING_RATE, hp.NUM_EPOCH))
     
     # show_patient(train_loader)
 
@@ -99,7 +93,8 @@ def main():
 
     optimizer = optim.Adam(model.parameters(), lr=hp.LEARNING_RATE)
 
-    train_fn(
+    if LOAD_MODEL:
+        train_fn(
         train_loader=train_loader, 
         val_loader=val_loader, 
         model=model, 
@@ -111,7 +106,21 @@ def main():
         writer=writer,
         val_interval=1,
         checkpoint=MODEL_SAVE_PATH
-    )    
+        )    
+    else:
+        train_fn(
+            train_loader=train_loader, 
+            val_loader=val_loader, 
+            model=model, 
+            optimizer=optimizer, 
+            loss_fn=loss_fn, 
+            num_epoch=hp.NUM_EPOCH, 
+            device=hp.DEVICE,
+            model_save_path=MODEL_SAVE_PATH,
+            writer=writer,
+            val_interval=1,
+            checkpoint=None
+        )    
         
 
 if __name__ == '__main__':
