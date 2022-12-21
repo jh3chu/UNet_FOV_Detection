@@ -7,7 +7,6 @@ import torch
 import torchvision
 import nibabel as nib
 import matplotlib.pyplot as plt
-from sklearn.preprocessing import MinMaxScaler
 from glob import glob
 
 from monai.transforms import (
