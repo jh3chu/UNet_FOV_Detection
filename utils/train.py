@@ -4,16 +4,8 @@ import numpy as np
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-import torch.optim as optim
-
-# from monai.metrics import DiceMetric
 
 from utils.utils import dice_metric
-
-# from torch.utils.tensorboard import SummaryWriter
-# writer = SummaryWriter('logs')
-
-# dice_metric = DiceMetric(include_background=False, reduction='mean')
 
 def train_fn(
     train_loader, 
@@ -29,20 +21,20 @@ def train_fn(
     checkpoint=None,
 ):
     '''
-    Training function with validation intervals 
-    :params:
-        train_loader:
-        val_loader:
-        model:
-        optimizer:
-        loss_fn:
-        num_epoch:
-        device:
-        model_save_path:
-        val_interval:
-        checkpoint: model_save_path
-        writer:
-    :outputs:
+    Training function
+
+    Params:
+        train_loader: Training dataloader
+        val_loader: Validation dataloader
+        model: Model to be trained
+        optimizer: Optimizer for training
+        loss_fn: Loss function for training optimization
+        num_epoch: Number of epochs for training
+        device: Device used for training
+        model_save_path: Destination path for best model and model checkpoint saving
+        writer: Tensorboard writer
+        val_interval: Epoch interval for validation data
+        checkpoint: See model_save_path
     '''
     best_metric = -1
     best_metric_epoch = -1
@@ -150,6 +142,8 @@ def train_fn(
         writer.add_scalar('Train Loss per Epoch', epoch_train_loss, epoch)
         print('Epoch loss: {:.4f}'.format(epoch_train_loss))
         train_loss_values.append(epoch_train_loss)
+        if not os.path.exists(os.path.join(model_save_path, 'loss_values')):
+            os.makedirs(os.path.join(model_save_path, 'loss_values'))
         np.savetxt(
             os.path.join(model_save_path, 'loss_values', 'epoch_{}_train_loss.csv'.format(epoch)), 
             np.asarray(train_loss_values), 
