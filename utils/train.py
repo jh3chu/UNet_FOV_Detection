@@ -247,7 +247,7 @@ def train_fn(
                     torch.save(model.state_dict(), os.path.join(model_save_path, 'best', 'best_model.pth'))
 
                 print(
-                    'Current epoch: {} \nCurrent metric: {:.4f} \nBest Metric: {:.4f} at epoch {}'.format(epoch+1, val_metric, best_metric, best_metric_epoch)
+                    'Current epoch: {} \nCurrent metric: {:.4f} \nBest Metric: {:.4f} at epoch {}'.format(epoch, val_metric, best_metric, best_metric_epoch)
                 )
 
     print('Training Completed \n Best mean dice: {:.4f} at epoch {}'.format(best_metric, best_metric_epoch))
